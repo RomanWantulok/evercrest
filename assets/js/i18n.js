@@ -1549,7 +1549,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Tarayıcı dilini veya kaydedilmiş dili al
   const savedLang = localStorage.getItem("preferred_language");
   const browserLang = navigator.language.split("-")[0];
-  const defaultLang = savedLang || (translations[browserLang] ? browserLang : "tr");
+  const defaultLang = savedLang || (translations[browserLang] ? browserLang : "cz");
   
   // Başlangıç dilini ayarla
   changeLanguage(defaultLang);
