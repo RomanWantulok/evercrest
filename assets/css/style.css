@@ -1598,3 +1598,39 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #00e0ff;
 }
+
+/* světlejší pozadí sekce s pravidly */
+.section.bg-light {
+  background: radial-gradient(circle at top, #2a2152 0%, #0a0c21 45%, #050713 100%);
+}
+
+/* výraznější, světlejší karty v téhle sekci */
+.section.bg-light .card {
+  background: linear-gradient(135deg, #121738 0%, #090f27 100%);
+  border-color: rgba(0, 224, 255, 0.5);
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(0, 224, 255, 0.2);
+}
+
+/* světlejší text na kartách */
+.section.bg-light .card h3,
+.section.bg-light .card p {
+  color: #e8ecff;
+}
+
+/* Mírnější pozadí pro tmavé sekce (Pravidla, ToS, atd.) */
+.section.bg-dark {
+  background:
+    radial-gradient(circle at 15% -10%, rgba(168, 99, 255, 0.18) 0%, transparent 55%),
+    linear-gradient(135deg, #050515 0%, #090b1f 50%, #050515 100%);
+}
+
+/* Ztlumení „svítící“ skvrny na straně */
+.section.bg-dark::before {
+  background: radial-gradient(
+    circle at 60% 40%,
+    rgba(0, 230, 255, 0.06) 0%,
+    transparent 55%
+  );
+}
